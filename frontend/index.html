@@ -1,1 +1,32 @@
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualizador de Rotas e Grafos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Visualizador Interativo de Rotas e Grafos</h1>
+  </header>
+  <main>
+    <section class="controles">
+      <label>Origem:
+        <select id="select-origem"></select>
+      </label>
+      <label>Destino:
+        <select id="select-destino"></select>
+      </label>
+      <button id="btn-rota">Calcular Rota</button>
+      <button id="btn-limpar">Limpar Destaques</button>
+      <div id="resultado" class="resultado"></div>
+      <p class="dica">
+        Clique em uma área vazia do canvas para criar um vértice.<br>
+        Clique sobre uma aresta para bloqueá-la/desbloqueá-la.
+      </p>
+    </section>
+    <canvas id="canvas" width="960" height="600"></canvas>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
